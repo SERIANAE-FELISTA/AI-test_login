@@ -1,5 +1,6 @@
 ****PART ONE**
 **1. Theoretical Analysis****
+
 a)	Explain how AI-driven code generation tools (e.g., GitHub Copilot) reduce development time. What are their limitations?
 AI code tools (e.g., GitHub Copilot) reduce development time by auto-completing code, generating templates, and minimizing syntax errors.
 Limitations: They lack full project context, can generate insecure or low-quality code, and may raise copyright issues.
@@ -8,14 +9,17 @@ Unsupervised learning finds unusual patterns that might indicate new or unknown 
 Supervised is accurate with data; unsupervised works without labels but may flag false    positives.
 
 c)	**Why is bias mitigation critical when using AI for user experience personalization?**
+
 Bias mitigation ensures fair, inclusive personalization. Without it, AI can discriminate, reduce user trust, and create unequal experiences.
 
 2.** Case Study Analysis**
+
 AIOps (Artificial Intelligence for IT Operations) improves software deployment efficiency by using machine learning and data analytics to automate and optimize the deployment process. It reduces manual intervention, speeds up issue detection, and ensures smoother releases.
 Examples include; Automated Error Detection and Resolution and Predictive Resource Management.
 
  **  PART TWO**
 **Task 1**
+
  Write a Python function to sort a list of dictionaries by a specific key. Compare the AI-suggested code with your manual implementation and document which version is more efficient and why.
 AI suggested code from Github Copilot
 def sort_dicts_by_key(data, key):
@@ -23,6 +27,7 @@ return sorted(data, key=lambda x: x[key])
 -This version uses Python’s built-in sorted() function with a lambda expression. It’s concise, readable, and efficient, leveraging Python’s Timsort algorithm (O(n log n) complexity).
 
 **Manual Implementation**
+
 def manual_sort_dicts_by_key(data, key):
     n = len(data)
     for i in range(n):
@@ -39,6 +44,7 @@ Overall, the AI-suggested code outperforms the manual version in speed, readabil
 **Task 2**
 **Automated Testing with AI****
 **Test scripts**
+
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 import time
@@ -57,15 +63,18 @@ else:
 driver.quit()
 
 **Test screenshots**
+
 <img width="947" height="534" alt="image" src="https://github.com/user-attachments/assets/c657c471-79fb-41b9-8d10-debb08caeb0d" />
  <img width="903" height="537" alt="image" src="https://github.com/user-attachments/assets/e6150d74-958e-48f1-9de2-4a1afd827e5d" />
 
  
 **How AI improves test coverage compared to manual testing.**
+
 AI-driven tools like Testim.io enhance test automation by learning element behavior and adapting to UI changes automatically. Traditional Selenium scripts can break when element locators or page layouts change, but AI-powered locators in Testim identify components by multiple attributes (like text, position, and context), improving test resilience. AI also analyzes past test executions to prioritize high-risk scenarios and suggest additional test paths, increasing coverage. In this test, AI automation accurately verified both valid and invalid login workflows, detecting expected success and error messages. Compared to manual testing, this approach saves time, reduces human error, and ensures consistent regression testing across multiple browsers and devices.
 
 **Task 3**
 **Predictive Analytics for Resource Allocation**
+
 Dataset: Use Kaggle Breast Cancer Dataset.
 Preprocess data (clean, label, split).
 Train a model (e.g., Random Forest) to predict issue priority (high/medium/low).
@@ -100,7 +109,8 @@ print(classification_report(y_test, y_pred, target_names=le.classes_))
 print('\nConfusion Matrix:\n')
 print(confusion_matrix(y_test, y_pred))
 
-Performance Metrics
+**Performance Metrics**
+
 {
   "accuracy": 0.993006993006993,
   "f1_macro": 0.9929824561403509,
@@ -125,6 +135,7 @@ Performance Metrics
 
 **PART 3**
 **Ethical Reflection**
+
 Even though the breast-cancer dataset is widely used for research, it still contains potential sources of bias that could affect fairness when applied in a company setting:
 •	Demographic Bias: The dataset primarily represents data from a specific hospital and population group (mostly older women from Wisconsin, USA). If deployed globally, the model may underperform for underrepresented groups (e.g., younger patients or different ethnic backgrounds).
 •	Sampling Bias: Data collection was not balanced across all tumor types or sizes, leading to potential over-representation of certain conditions.
@@ -137,6 +148,7 @@ Fairness frameworks like IBM AI Fairness 360 (AIF360) can help identify and miti
 •	In-processing Algorithms: Fair models (e.g., adversarial debiasing) learn to minimize bias while maintaining accuracy.
 
 **Bonus task**
+
 Proposed Tool: AutoDoc AI – Intelligent Software Documentation Assistant
 Purpose:
 Software engineers often spend hours writing and updating project documentation, which quickly becomes outdated. AutoDoc AI automatically generates and maintains accurate, developer-friendly documentation directly from codebases and commit histories.
