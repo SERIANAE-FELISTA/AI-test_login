@@ -1,5 +1,5 @@
-**PART ONE
-1. Theoretical Analysis**
+****PART ONE**
+**1. Theoretical Analysis****
 a)	Explain how AI-driven code generation tools (e.g., GitHub Copilot) reduce development time. What are their limitations?
 AI code tools (e.g., GitHub Copilot) reduce development time by auto-completing code, generating templates, and minimizing syntax errors.
 Limitations: They lack full project context, can generate insecure or low-quality code, and may raise copyright issues.
@@ -13,6 +13,7 @@ Bias mitigation ensures fair, inclusive personalization. Without it, AI can disc
 2.** Case Study Analysis**
 AIOps (Artificial Intelligence for IT Operations) improves software deployment efficiency by using machine learning and data analytics to automate and optimize the deployment process. It reduces manual intervention, speeds up issue detection, and ensures smoother releases.
 Examples include; Automated Error Detection and Resolution and Predictive Resource Management.
+
  **  PART TWO**
 **Task 1**
  Write a Python function to sort a list of dictionaries by a specific key. Compare the AI-suggested code with your manual implementation and document which version is more efficient and why.
@@ -35,9 +36,9 @@ Efficiency Analysis
 In contrast, the manual implementation uses a nested loop (bubble sort) with O(n²) time complexity. While it demonstrates a clear understanding of sorting logic, it becomes inefficient for larger datasets, leading to slower performance and higher computational cost. Additionally, the built-in approach is more readable and less prone to coding errors.
 Overall, the AI-suggested code outperforms the manual version in speed, readability, and maintainability. For professional applications, leveraging Python’s optimized functions is the preferred choice.
 
-**Task 2
-Automated Testing with AI**
-Test scripts
+**Task 2**
+**Automated Testing with AI****
+**Test scripts**
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 import time
@@ -54,11 +55,13 @@ if "inventory" in driver.current_url:
 else:
     print("❌ Login failed.")
 driver.quit()
-Test screenshots
- 
+
+**Test screenshots**
+<img width="947" height="534" alt="image" src="https://github.com/user-attachments/assets/c657c471-79fb-41b9-8d10-debb08caeb0d" />
+ <img width="903" height="537" alt="image" src="https://github.com/user-attachments/assets/e6150d74-958e-48f1-9de2-4a1afd827e5d" />
 
  
-How AI improves test coverage compared to manual testing.
+**How AI improves test coverage compared to manual testing.**
 AI-driven tools like Testim.io enhance test automation by learning element behavior and adapting to UI changes automatically. Traditional Selenium scripts can break when element locators or page layouts change, but AI-powered locators in Testim identify components by multiple attributes (like text, position, and context), improving test resilience. AI also analyzes past test executions to prioritize high-risk scenarios and suggest additional test paths, increasing coverage. In this test, AI automation accurately verified both valid and invalid login workflows, detecting expected success and error messages. Compared to manual testing, this approach saves time, reduces human error, and ensures consistent regression testing across multiple browsers and devices.
 
 **Task 3**
@@ -132,7 +135,8 @@ Fairness frameworks like IBM AI Fairness 360 (AIF360) can help identify and miti
 •	Bias Detection Metrics: Tools such as disparate impact, statistical parity difference, and equal opportunity difference measure whether certain groups receive systematically different outcomes.
 •	Pre-processing Techniques: Methods like Reweighing or Disparate Impact Remover adjust the data before training to balance underrepresented groups.
 •	In-processing Algorithms: Fair models (e.g., adversarial debiasing) learn to minimize bias while maintaining accuracy.
-Bonus task
+
+**Bonus task**
 Proposed Tool: AutoDoc AI – Intelligent Software Documentation Assistant
 Purpose:
 Software engineers often spend hours writing and updating project documentation, which quickly becomes outdated. AutoDoc AI automatically generates and maintains accurate, developer-friendly documentation directly from codebases and commit histories.
